@@ -1,0 +1,97 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+}
+
+nav {
+background-color: #333;
+color: white;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: space-around;
+padding: 10px 0;
+}
+
+nav a {
+text-decoration: none;
+color: white;
+}
+
+.about-section {
+max-width: 800px;
+margin: 50px auto;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.about-section img {
+max-width: 40%;
+border-radius: 50%;
+}
+
+.about-section p {
+flex-basis: 100%;
+margin-bottom: 15px;
+text-align: center;
+}
+
+footer {
+text-align: center;
+margin-top: 50px;
+padding: 10px 0;
+background-color: #333;
+color: white;
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 600px) {
+.about-section img {
+max-width: 100%;
+}
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Me</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="about-section">
+        <img src="" alt="Profile Image">
+        <p>Hello! I'm a passionate individual who loves coding and design. With several years of experience in web
+            development, I enjoy turning complex problems into simple, beautiful, and intuitive solutions.</p>
+        <p>When I'm not in front of a computer, you can find me exploring nature, reading science fiction, or
+            experimenting with new cooking recipes.</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 iamjarrett.me</p>
+    </footer>
+</body>
+
+</html>
